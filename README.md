@@ -12,5 +12,5 @@ The overall workflow is presented below: (a) Construct $T$ sets of time-varying 
 
 ### Requirements: 
 
-
+The detailed requirements can be found [here] (https://github.com/zoey114/TMCPD/blob/main/requirements/).
 ### Example:
