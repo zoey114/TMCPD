@@ -1,0 +1,46 @@
+---
+title: "R Notebook"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### load data
+```{r}
+# set working dictionary for the example folder
+source('../code/functions.R') 
+# Input: A sequence of networks represented in the form of adjacency matrices.
+load("adj_mat_seq.RData")
+```
+
+### Find common community structure across the whole time period
+```{r}
+yr = seq(1990,2010)
+res = mod_cluster(Adj = adj, yr, start=1)
+mod = res$modularity
+cl = res$membership
+plot(c(1990:2010),mod,xlab="year",ylab="modularity")
+```
+### Detect the first change point 
+```{r}
+library(EnvCpt)
+fit_envcpt = envcpt(mod, models="meancpt") 
+plot(fit_envcpt)
+cp.location = fit_envcpt$meancpt@cpts 
+cat(paste0("the 1st change point is at ", cp.location[1]), "\n")
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
