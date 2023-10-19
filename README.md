@@ -11,6 +11,9 @@ The overall workflow is presented below: (a) Construct $T$ sets of time-varying 
 
 
 ### Requirements: 
+R version 4.0 or greater is required.
 
-The detailed requirements can be found [here] (https://github.com/zoey114/TMCPD/blob/main/requirements/).
+Matlab version 
+
+The detailed requirements can be found [here](https://github.com/zoey114/TMCPD/blob/main/requirements). 
 ### Example:
