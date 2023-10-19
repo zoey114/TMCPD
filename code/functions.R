@@ -7,7 +7,6 @@ mod_cluster = function(Adj, yr, start){
   library(parallel)
   options(matlab.path = "/Applications/MATLAB_R2021b.app/bin")   #set up the path for matlab, i.e. where matlab is located
   have_matlab()   
-  setwd("/Users/zhenwang/Documents/new_IR/code/Rtoolbox")
   modularity = c()
   membership = list()
   id = rownames(Adj[[1]])
@@ -72,9 +71,6 @@ mod_cluster = function(Adj, yr, start){
       run_matlab_code(code)
     }
     
-    
-    # setwd('./Rtoolbox/data_example/')     #set this to the downloaded 'Rtool/data_example'
-    # M<-calculate_MMatrix(100,10)
     sum<-calculate_norm(size,n)
     # setwd('..')                           #set this to the downloaded 'Rtool' file
     write.csv(M,"MMatrix_dca.csv",row.names=F)
