@@ -8,12 +8,15 @@ The overall workflow is presented below: (a) Construct $T$ sets of time-varying 
 <img width="800" alt="workflow" src="https://github.com/zoey114/TMCPD/assets/56131629/9ee3a28e-fcc4-44d3-be9c-9ea20f7eed03">
 
 
-
-
 ### Requirements: 
 R version 4.0 or greater is required.
 
-Matlab version 
+Matlab version R2021b or greater is required. 
 
 The detailed requirements can be found [here](https://github.com/zoey114/TMCPD/blob/main/requirements). 
-### Example:
+
+### Tutorial:
+TMCPD requires a list of adjacency matrices as input, denoted as $`\{ A(G_{s}),s=1,...,T\}`$. The instructions for implementing TMCPD are available in [example.md](xxxxxxx). 
+
+### Data: 
+The DCA data used in this paper can be found [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/UPMOHW). 
